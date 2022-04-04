@@ -30,9 +30,6 @@ nav a {
     display: block;
     margin-bottom: 0.5rem;
     text-decoration: none;
-}
-
-a:visited {
     color: rgb(240, 240, 240);
 }
 
