@@ -1,0 +1,133 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    background-color: #4D908E;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    color: rgb(240, 240, 240);
+}
+
+nav ul {
+    margin: 0 auto 4rem auto;
+    padding: 20px 0; /* så att den hamnar nära kanten */
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    list-style: none;
+    background-color: #F9844A;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(240, 240, 240);
+}
+
+nav .thisPage {
+    color: white;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.weather__wrapper {
+    margin: 0 auto;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem; /* använd rm och sätt en bas*/
+}
+
+.weather__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Så att texten är centrerad*/
+    background-color: #43AA8B;
+    color: rgb(218 218 218);
+    padding: 20px;
+    margin-top: 2px;
+    border-radius: 25px;
+}
+
+.secret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svg {
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+}
+
+.svg:hover {
+    background-color: #468381;
+    border-radius: 10px;
+    cursor: help;
+}
+
+
+/*--- Desktop first ---*/
+
+/* Dator mellan */
+@media screen and(max-width: 992px) {
+    .weather__wrapper {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+/* Platta */
+@media  screen and (max-width: 820px) {
+    .weather__wrapper {
+        width: 500px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content {
+        width: 500px;
+    }
+}
+
+/* Mobil */
+@media  screen and (max-width: 560px) {
+    .weather__wrapper {
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        width: 400px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
